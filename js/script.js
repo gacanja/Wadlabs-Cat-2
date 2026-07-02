@@ -1,3 +1,7 @@
+// ===========================
+// Feature 1 - Dynamic Services
+// ===========================
+
 const services = [
     {
         name: "Event Photography",
@@ -27,5 +31,44 @@ services.forEach(function(service) {
     `;
 
     servicesContainer.appendChild(card);
+
+});
+
+// ===========================
+// Feature 2 - Session Planner
+// ===========================
+
+const sessionInput = document.getElementById("sessionInput");
+const addSessionBtn = document.getElementById("addSessionBtn");
+const sessionList = document.getElementById("sessionList");
+
+addSessionBtn.addEventListener("click", function () {
+
+    const sessionName = sessionInput.value;
+
+    if (sessionName.trim() === "") {
+        alert("Please enter a session.");
+        return;
+    }
+
+    const sessionItem = document.createElement("div");
+    sessionItem.className = "card";
+
+    const sessionText = document.createElement("span");
+    sessionText.textContent = sessionName;
+
+    const removeBtn = document.createElement("button");
+    removeBtn.textContent = "Remove";
+
+    removeBtn.addEventListener("click", function () {
+        sessionItem.remove();
+    });
+
+    sessionItem.appendChild(sessionText);
+    sessionItem.appendChild(removeBtn);
+
+    sessionList.appendChild(sessionItem);
+
+    sessionInput.value = "";
 
 });
