@@ -1,0 +1,28 @@
+WAD CAT 2 - Implementation Notes
+
+1. Dynamic Services
+- Services are stored in a JavaScript array.
+- Displayed dynamically using forEach().
+
+2. Session Planner
+- Users can add and remove photography sessions.
+- Sessions are created using createElement() and appendChild().
+- Sessions are removed using remove().
+
+3. Contact Form
+- Uses preventDefault() to stop the default form submission.
+- Validates all required fields.
+- Displays success or error messages.
+
+4. localStorage
+- Session Planner data is stored using localStorage.
+- Sessions remain after refreshing the page.
+
+5. Gallery Interaction
+- Clicking any gallery image displays a JavaScript alert.
+- Implemented using addEventListener().
+
+Technologies Used
+- HTML5
+- CSS3
+- JavaScript (ES6)

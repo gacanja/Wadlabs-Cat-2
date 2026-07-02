@@ -237,3 +237,29 @@ footer {
     background-color: gold;
     color: black;
 }
+/* HERO INFORMATION */
+
+.hidden {
+    display: none;
+}
+
+#heroInfo {
+    margin-top: 15px;
+    max-width: 500px;
+    font-size: 1rem;
+}
+
+#learnMoreBtn {
+    margin-top: 20px;
+    padding: 12px 20px;
+    background-color: gold;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#learnMoreBtn:hover {
+    background-color: white;
+}
